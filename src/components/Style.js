@@ -105,7 +105,19 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
-div{
+
+    
+    
+    figure{
+        
+    }
+}
+
+
+`
+export const DivMain = styled.div`
+
+
     position: relative;
     top: -35vh;
     display: flex;
@@ -114,37 +126,39 @@ div{
     flex-direction: column;
     height: 20vh;
     width:80vh;
-    h3{
+   
+
+`
+export const H3 = styled.h3`
+
+
         
-        font-size:25px;
-        color: #373737;
-        letter-spacing: 1px;
-        transition: ease-in-out 0.4s;
-        &:hover,&:hover + span{
-            transform: scale(115%);
-        }
-    }
-    span{
-        position: relative;
-        top: 2.5vh;
-        background-color: #000;
-        width: 5.5vw;
-        height: 0.5vh;
-        transition: ease-in-out 0.4s;
-    }
-    figure{
-        
-    }
+font-size:25px;
+color: #373737;
+letter-spacing: 1px;
+transition: ease-in-out 0.4s;
+&:hover,&:hover + span{
+    transform: scale(115%);
 }
-section{
+   
+
+`
+
+export const Span =styled.span`
     position: relative;
-    top: -38vh;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 100vh;
-    
-}
+    top: 2.5vh;
+    background-color: #000;
+    width: 5.5vw;
+    height: 0.5vh;
+    transition: ease-in-out 0.4s;
+`
+export const Section = styled.section` 
+position: relative;
+top: -38vh;
+display: flex;
+justify-content: space-evenly;
+width: 100%;
+height: 100vh;
 
 `
 
@@ -164,16 +178,20 @@ span{
     width: 4vw;
     height: 0.8vh;
 }
-figcaption{
-    font-family: "Questrial", sans-serif;
-    position: relative;
-    top: 15vh;
-    font-size: 28px;
-    cursor: pointer;
-    &:hover{
-        transform: scale(105%);
-    }
+
+`
+
+
+export const Figcaption = styled.figcaption`
+font-family: "Questrial", sans-serif;
+position: relative;
+top: 15vh;
+font-size: 28px;
+cursor: pointer;
+&:hover{
+    transform: scale(105%);
 }
+
 `
 export const Images = styled.img`
 height: 55vh;
